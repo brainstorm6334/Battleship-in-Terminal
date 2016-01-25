@@ -1,4 +1,3 @@
-## Homework I: Battleship Game
 import random 
 from random import randint
 
@@ -33,7 +32,6 @@ for y in range(10):                 #1st column initialization
 for row in board:                   #inserting vertical separators of cells in board
       print("|".join(row), end="|\n")
 
-### Board Complete
 
 #Inserting ship
 
@@ -59,7 +57,6 @@ if randomNumber1%2 == 0:            #horizontal arrangement
       SHIP = [[shipPosit1row, shipPosit1col],[shipPosit2row, shipPosit2col], \
         [shipPosit3row, shipPosit3col],[shipPosit4row, shipPosit4col]]
 
-      #print(SHIP)   # to be removed
       
 else:                               #vertical arrangement
       randomNumber2 = random.randint(1,6)
@@ -79,7 +76,6 @@ else:                               #vertical arrangement
       SHIP = [[shipPosit1row, shipPosit1col],[shipPosit2row, shipPosit2col], \
         [shipPosit3row, shipPosit3col],[shipPosit4row, shipPosit4col]]
 
-      #print(SHIP)  # to be removed
 
 #user guessing
 
@@ -97,9 +93,6 @@ in the format ROW,COLUMN (Example: 2,A): ").upper()
       
       guessedCol = int(ord(userGuess[1]) - 64)
       turnCounter += 1
-
-      #print(userGuess)        #to be removed
-      #print(guessedRow, guessedCol) #to be removed
 
       if guessedRow > 10 or guessedRow <=0 or guessedCol < 1 or guessedCol > 10: #out of range input
             print("\nInvalid location!")
@@ -130,9 +123,10 @@ in the format ROW,COLUMN (Example: 2,A): ").upper()
             #turnCounter += 1
             for row in board:                   
                   print("|".join(row), end="|\n")
-                       
-      else:
-            print("\nFATAL ERROR!\n")
+      
+if playing == 1:
+      print("\nCongratulations! You sinked the ship!\n")
+      print(turnCounter, "turns")
             
                        
 
