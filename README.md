@@ -22,7 +22,7 @@ Compatible with any OS that has Python v3 installed.
 
 [Python 3.5](https://www.python.org/)
 
-# [Webpage](http://brainstorm6334.github.io/Fast-Furious-Pacman-Game/)
+# [Webpage](http://brainstorm6334.github.io/Script-Battleship)
 
 
 
